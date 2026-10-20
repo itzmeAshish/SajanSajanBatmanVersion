@@ -3,9 +3,13 @@
 # 🦇 Batman x Sajan Sajan — on a 0.96" OLED
 ### The edit that's all over Shorts and Reels, playing at **30 fps** on a screen the size of a postage stamp.
 
-<img src="https://www.oledanimationmaker.com/github-readmes/SajanSajanBatman-preview.gif" alt="Batman x Sajan Sajan Teri Dulhan edit playing as 1-bit video on a 128x64 SSD1306 OLED" width="512" />
+<img src="preview.gif" alt="Batman x Sajan Sajan Teri Dulhan edit playing as 1-bit video on a 128x64 SSD1306 OLED" width="512" />
 
 **768 frames. One ESP8266. Zero audio. The Dark Knight, but make it a wedding song.**
+
+> **Built and tested on ESP8266.** Want it on a different board? [Open OLED Animation Maker](https://www.oledanimationmaker.com/), pick your board and library, import your clip and click **Get the Code**.
+
+
 
 ![Arduino](https://img.shields.io/badge/Arduino-IDE-00979D?logo=arduino&logoColor=white)
 ![ESP8266](https://img.shields.io/badge/Board-ESP8266-000000?logo=espressif&logoColor=white)
@@ -58,6 +62,17 @@ SajanSajanBatmanVersion/
 
 ---
 
+## 🔁 Need a different board?
+
+All the code here is made for **ESP8266**. Please don't hand-edit it for another chip. Instead, generate fresh code for your board on our website:
+
+1. Open [oledanimationmaker.com](https://www.oledanimationmaker.com/)
+2. Pick your **board** (the tool has a 24-board menu: Arduino Uno/Nano/Mega, many ESP32 types, Raspberry Pi Pico and more) and your **library**
+3. Import your clip or GIF
+4. Click **Get the Code** and upload it
+
+---
+
 ## ⚡ 60-second start
 
 ```bash
@@ -69,6 +84,8 @@ git clone https://github.com/itzmeAshish/SajanSajanBatmanVersion.git
 3. Select your ESP8266 board and a **4MB flash** layout
 4. Upload (the first compile is slow, since `frames.h` is about 5 MB)
 5. Open Serial at **115200** and watch for `Actual FPS: 30.0 Hz`
+
+> **New to Arduino?** The [step-by-step upload guide](https://www.oledanimationmaker.com/blog/upload-oled-animation-from-github-esp8266-arduino-ide.html) covers the board package, wiring diagram, board settings and a troubleshooting table.
 
 ---
 
@@ -99,7 +116,7 @@ git clone https://github.com/itzmeAshish/SajanSajanBatmanVersion.git
 
 These match `I2C_SDA 4` and `I2C_SCL 5` in the sketch.
 
-**ESP32?** Change those two defines to `21` and `22`. The sketch is written for ESP8266, so treat ESP32 as "should work".
+**Another board?** This code is built for ESP8266 only. For any other board, generate code for it on [oledanimationmaker.com](https://www.oledanimationmaker.com/).
 
 ---
 
